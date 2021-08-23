@@ -27,9 +27,9 @@ module RailsViewComponentBlog
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-      
+
     # Set the queuing backend to `Sidekiq`
-    # 
+    #
     # Be sure to have the adapter's gem in your Gemfile
     # and follow the adapter's specific installation
     # and deployment instructions.
@@ -37,11 +37,11 @@ module RailsViewComponentBlog
 
     # Prefix the queue name of all jobs with Rails ENV
     config.active_job.queue_name_prefix = Rails.env
-  
+
     # Compress the responses to reduce the size of html/json controller responses.
     config.middleware.use Rack::Deflater
 
     # Automatically generate the `translation.js` files
     config.middleware.use I18n::JS::Middleware
-end
+  end
 end

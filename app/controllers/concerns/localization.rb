@@ -15,7 +15,9 @@ module Localization
     end
 
     def extract_locale_from_param
-      return params[:locale] if I18n.locale_available?(params[:locale])
+      locale_param = params[:locale]
+
+      return locale_param if I18n.locale_available?(locale_param)
 
       nil
     end
