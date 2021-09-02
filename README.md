@@ -50,7 +50,7 @@ foreman start -f Procfile.dev
 > ℹ️ Apply the below commands **each time** you want to push a new component into the StoryBook
 > _We assume you already built your component and its stories_
 
-- Convert the ruby stories into a JSON file:
+- Convert each ruby story into a JSON file:
   ```shell
   rake view_component_storybook:write_stories_json 
   ```
