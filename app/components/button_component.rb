@@ -31,7 +31,7 @@ class ButtonComponent < ViewComponent::Base
     link: LINK_CLASSES
   }.freeze
 
-  def initialize(type: :primary, link:)
+  def initialize(type: :primary, link: '#')
     @type = type
     @link = link
     super
