@@ -51,6 +51,7 @@ group :development, :test do
   gem 'rubocop-rails', require: false # A RuboCop extension focused on enforcing Rails best practices and coding conventions.
   gem 'rubocop-rspec', require: false # Code style checking for RSpec files
   gem 'rubocop-performance', require: false # An extension of RuboCop focused on code performance checks.
+  gem "view_component", require: "view_component/engine" # Reusable, testable & encapsulated view components
 
   gem 'undercover' # Report missing test coverage in new changes
   gem 'danger' # Automated code review.
