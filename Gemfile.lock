@@ -442,6 +442,8 @@ GEM
     view_component (2.39.0)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
+    view_component_storybook (0.10.1)
+      view_component (>= 2.36)
     warden (1.2.9)
       rack (>= 2.0.9)
     webdrivers (4.6.0)
@@ -527,6 +529,7 @@ DEPENDENCIES
   undercover
   vcr
   view_component
+  view_component_storybook
   webdrivers
   webmock
   webpacker (~> 5.2.0)

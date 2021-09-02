@@ -52,6 +52,7 @@ group :development, :test do
   gem 'rubocop-rspec', require: false # Code style checking for RSpec files
   gem 'rubocop-performance', require: false # An extension of RuboCop focused on code performance checks.
   gem "view_component", require: "view_component/engine" # Reusable, testable & encapsulated view components
+  gem "view_component_storybook" # Components documentation streamlined
 
   gem 'undercover' # Report missing test coverage in new changes
   gem 'danger' # Automated code review.

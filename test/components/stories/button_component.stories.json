@@ -1,0 +1,62 @@
+{
+  "title": "Button Component",
+  "stories": [
+    {
+      "name": "default",
+      "parameters": {
+        "server": {
+          "id": "button_component/default"
+        }
+      },
+      "args": {
+        "type": "primary"
+      },
+      "argTypes": {
+        "type": {
+          "control": {
+            "type": "select"
+          },
+          "name": "Type",
+          "options": [
+            "primary",
+            "secondary",
+            "danger",
+            "link"
+          ]
+        }
+      }
+    },
+    {
+      "name": "primary",
+      "parameters": {
+        "server": {
+          "id": "button_component/primary"
+        }
+      }
+    },
+    {
+      "name": "secondary",
+      "parameters": {
+        "server": {
+          "id": "button_component/secondary"
+        }
+      }
+    },
+    {
+      "name": "danger",
+      "parameters": {
+        "server": {
+          "id": "button_component/danger"
+        }
+      }
+    },
+    {
+      "name": "link",
+      "parameters": {
+        "server": {
+          "id": "button_component/link"
+        }
+      }
+    }
+  ]
+}
