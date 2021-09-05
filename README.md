@@ -1,8 +1,7 @@
-[![Build Status](CI_BADGE_URL goes here)](REPO_URL goes here)
-
 ## Introduction
 
-> *App introduction goes here ...*
+> This project is a simple blog project that uses [ViewComponents](https://viewcomponent.org/) to build frontend and 
+> [ViewComponent::Storybook](https://github.com/jonspalmer/view_component_storybook) for styleguide.
 
 ## Project Setup
 
