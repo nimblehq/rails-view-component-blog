@@ -2,5 +2,3 @@ ARG DOCKER_REGISTRY_HOST=docker.io
 ARG DOCKER_IMAGE=nimblehq/rails_view_component_blog
 ARG BRANCH_TAG=latest
 FROM ${DOCKER_REGISTRY_HOST}/${DOCKER_IMAGE}:${BRANCH_TAG}
-
-CMD ./bin/worker.sh
