@@ -44,6 +44,7 @@ module RailsViewComponentBlog
 
     # Enable ViewComponents previews
     config.view_component.show_previews = true
+    config.view_component.preview_paths << "#{Rails.root}/spec/components/previews"
 
     # Set the queuing backend to `Sidekiq`
     #

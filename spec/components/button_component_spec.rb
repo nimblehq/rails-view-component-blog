@@ -3,13 +3,29 @@
 require 'rails_helper'
 
 RSpec.describe ButtonComponent, type: :component do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context 'given no params but content' do
+    it 'renders a link that includes the content' do
+      content = 'Click me'
 
-  # it "renders something useful" do
-  #   expect(
-  #     render_inline(described_class.new(attr: "value")) { "Hello, components!" }.css("p").to_html
-  #   ).to include(
-  #     "Hello, components!"
-  #   )
-  # end
+      button = render_inline(described_class.new) { content }
+
+      expect(button).to have_text(content)
+    end
+
+    it 'renders a link with the primary button class' do
+      content = 'Click me'
+
+      button = render_inline(described_class.new) { content }
+
+      expect(button).to have_selector('a.btn-primary')
+    end
+
+    it 'renders a link with "#" as href' do
+      content = 'Click me'
+
+      button = render_inline(described_class.new) { content }
+
+      expect(button).to have_selector(:css, 'a[href="#"]')
+    end
+  end
 end
