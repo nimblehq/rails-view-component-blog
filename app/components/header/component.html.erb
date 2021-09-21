@@ -5,6 +5,12 @@
         <div class="site-heading">
           <h1><%= heading %></h1>
           <span class="subheading"><%= subheading %></span>
+          <% if notice %>
+            <%= render(AlertComponent.new(message: notice)) %>
+          <% end %>
+          <% if alert %>
+            <%= render(AlertComponent.new(type: :danger, message: alert)) %>
+          <% end %>
         </div>
       </div>
     </div>

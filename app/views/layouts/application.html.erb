@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang='<%= I18n.locale %>'>
+<html lang="<%= I18n.locale %>">
   <head>
-    <title>RailsViewComponentBlog</title>
+    <title>Rails View Component - The Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application' %>
 
@@ -16,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
   </head>
-
   <body>
     <%= render 'shared/navbar' %>
     <%= yield %>
