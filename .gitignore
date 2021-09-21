@@ -49,3 +49,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# View component temporary stories to feed StoryBook build
+*/*.stories.json
