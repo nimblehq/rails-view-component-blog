@@ -1,14 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<article class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <%= @article.content %>
+        <div class="mt-5">
+          <%= link_to 'Edit Blog', edit_article_path(@article), class: "btn btn-primary" %>
+          <%= link_to 'Delete Blog', @article, method: :delete, class: "btn btn-danger",
+                      data: { confirm: 'Are you sure?' } %>
+        </div>
 
-<p>
-  <strong>Content:</strong>
-  <%= @article.content %>
-</p>
+        <% if @article.comments.present? %>
+          <h3 class="mt-5">All comments</h3>
+          <%= render @article.comments %>
+        <% end %>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+        <h3 class="mt-5">Add a comment</h3>
+        <%= render 'comments/form' %>
+      </div>
+    </div>
+  </div>
+</article>
