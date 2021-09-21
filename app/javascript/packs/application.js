@@ -18,5 +18,5 @@ import 'screens/';
 Rails.start();
 ActiveStorage.start();
 
-require("trix")
-require("@rails/actiontext")
+require('trix');
+require('@rails/actiontext');

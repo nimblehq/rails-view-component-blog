@@ -1,6 +1,8 @@
 exclude:
   - 'node_modules/**'
   - 'coverage/**'
+  - 'app/assets/stylesheets/scaffolds.scss'
+  - 'app/assets/stylesheets/vendor/**/*'
 
 linters:
   BangFormat:
