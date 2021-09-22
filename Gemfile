@@ -5,7 +5,7 @@ ruby '2.7.2'
 gem 'rails', '6.1.3.1' # Latest stable
 gem 'pg' # Use Postgresql as database
 gem 'puma' # Use Puma as the app server
-gem 'mini_magick' # A ruby wrapper for ImageMagick or GraphicsMagick command line
+gem 'image_processing' # A high-level image processing wrapper for libvips and ImageMagick/GraphicsMagick
 gem 'pagy' # A pagination gem that is very light and fast
 gem 'discard' # Soft deletes for ActiveRecord
 gem 'ffaker' # A library for generating fake data such as names, addresses, and phone numbers.
