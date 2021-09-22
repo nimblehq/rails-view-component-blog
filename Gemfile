@@ -12,6 +12,7 @@ gem 'ffaker' # A library for generating fake data such as names, addresses, and 
 gem 'fabrication' # Fabrication generates objects in Ruby. Fabricators are schematics for your objects, and can be created as needed anywhere in your app or specs.
 gem 'bootsnap', require: false # Reduces boot times through caching; required in config/boot.rb
 gem 'i18n-js', '3.5.1' # A library to provide the I18n translations on the Javascript
+gem "view_component", require: "view_component/engine" # Reusable, testable & encapsulated view components
 
 # Authentications & Authorizations
 gem 'devise' # Authentication solution for Rails with Warden
@@ -51,6 +52,7 @@ group :development, :test do
   gem 'rubocop-rails', require: false # A RuboCop extension focused on enforcing Rails best practices and coding conventions.
   gem 'rubocop-rspec', require: false # Code style checking for RSpec files
   gem 'rubocop-performance', require: false # An extension of RuboCop focused on code performance checks.
+  gem "view_component_storybook" # Components documentation streamlined
 
   gem 'undercover' # Report missing test coverage in new changes
   gem 'danger' # Automated code review.

@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "lint": "eslint . --color",
-    "lint:fix": "eslint . --color --fix"
+    "lint:fix": "eslint . --color --fix",
+    "storybook:build": "build-storybook -o public/_storybook"
   },
   "dependencies": {
     "@babel/preset-typescript": "7.15.0",
@@ -17,7 +18,9 @@
     "trix": "^1.2.0",
     "typescript": "4.3.5",
     "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "@storybook/addon-controls": "6.3.7",
+    "@storybook/server": "6.3.7"
   },
   "devDependencies": {
     "@nimblehq/eslint-config-nimble": "2.1.1",

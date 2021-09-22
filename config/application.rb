@@ -40,6 +40,14 @@ module RailsViewComponentBlog
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+    if Rails.env.development?
+      require "view_component/storybook/engine"
+
+      # Enable ViewComponents previews
+      config.view_component.show_previews = true
+      config.view_component.preview_paths << "#{Rails.root}/spec/components/previews"
+    end
+
     # Set the queuing backend to `Sidekiq`
     #
     # Be sure to have the adapter's gem in your Gemfile

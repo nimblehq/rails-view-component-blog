@@ -36,6 +36,32 @@
 foreman start -f Procfile.dev
 ```
 
+### Configure Story Book
+
+> ℹ️ Apply the below configuration **once** to set up your local machine with StoryBook
+
+- Setup Storybook server locally
+  ```shell
+  yarn add @storybook/server @storybook/addon-controls --dev
+  ```
+
+### Push a new Story in StoryBook
+
+> ℹ️ Apply the below commands **each time** you want to push a new component into the StoryBook
+> _We assume you already built your component and its stories_
+
+- Convert each ruby story into a JSON file:
+  ```shell
+  rake view_component_storybook:write_stories_json 
+  ```
+
+- Build the StoryBook
+  ```shell
+  yarn storybook:build
+  ```
+
+> The StoryBook is a static website located inside the `/public/_storybook` so it will be deployed **with** the rails application.
+
 ## Tests
 
 ### Docker-based tests on the CI server
