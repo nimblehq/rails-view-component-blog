@@ -1,0 +1,51 @@
+.section-heading {
+  margin-top: 3.75rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.caption {
+  display: block;
+  margin: 0;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.post-preview > a {
+  color: #212529;
+}
+
+.post-preview > a:focus,
+.post-preview > a:hover {
+  color: #0085a1;
+  text-decoration: none;
+}
+
+.post-preview > a > .post-title {
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+  font-size: 1.875rem;
+}
+
+.post-preview > a > .post-subtitle {
+  margin-bottom: 0.625rem;
+  font-weight: 300;
+}
+
+.post-preview > .post-meta {
+  margin-top: 0;
+  color: #6c757d;
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.post-preview > .post-meta > a {
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  .post-preview > a > .post-title {
+    font-size: 2.25rem;
+  }
+}

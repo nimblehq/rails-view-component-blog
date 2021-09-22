@@ -3,6 +3,7 @@ exclude:
   - 'coverage/**'
   - 'app/assets/stylesheets/scaffolds.scss'
   - 'app/assets/stylesheets/vendor/**/*'
+  - 'app/assets/stylesheets/components/*'
 
 linters:
   BangFormat:
