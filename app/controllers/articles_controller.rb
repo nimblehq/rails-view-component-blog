@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles
   def index
-    @articles = Article.all
+    @pagy, @articles = pagy(Article.all)
   end
 
   # GET /articles/1

@@ -15,10 +15,12 @@
 
 // Layouts
 
-// Scaffolds
-// We want to remove it in the front end tickets
-@import 'scaffolds';
-
 // Components
+@import 'components/navbar';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/trix-editor';
+@import 'components/comment';
+@import 'components/post';
 
 // Screens
