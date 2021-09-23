@@ -1,0 +1,11 @@
+<div class="post-preview">
+  <%= link_to article do %>
+    <h2 class="post-title"><%= article.title %></h2>
+    <h3 class="post-subtitle"><%= truncate(article.content.to_plain_text, length: 100) %></h3>
+  <% end %>
+
+  <%= render PostingDetails::Component.new(name: 'Author', time: article.created_at) %>
+</div>
+<!-- Divider-->
+<hr class="my-4" />
+<!-- Pager-->

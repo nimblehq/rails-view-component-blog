@@ -50,3 +50,7 @@ RSpec/ContextWording:
   Prefixes:
     - when
     - given
+
+Lint/MissingSuper:
+  Exclude:
+    - 'app/components/**/*'

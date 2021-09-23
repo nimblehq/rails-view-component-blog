@@ -1,3 +1,8 @@
+<%= render Header::Component.new(image: url_for(@article.avatar.attached? ? @article.avatar : nil),
+                                 heading: @article.title,
+                                 subheading: (render PostingDetails::Component
+                                                      .new(name: "Author", time:@article.created_at))) %>
+
 <p id="notice"><%= notice %></p>
 
 <article class="mb-4">
@@ -6,9 +11,11 @@
       <div class="col-md-10 col-lg-8 col-xl-7">
         <%= @article.content %>
         <div class="mt-5">
-          <%= link_to 'Edit Blog', edit_article_path(@article), class: "btn btn-primary" %>
-          <%= link_to 'Delete Blog', @article, method: :delete, class: "btn btn-danger",
-                      data: { confirm: 'Are you sure?' } %>
+          <%= render ::Base::Button::Component.new(link: edit_article_path(@article))
+                                              .with_content('Edit Blog') %>
+          <%= render ::Base::Button::Component.new(link: @article, type: :danger, method: :delete,
+                                                   data: { confirm: 'Are you sure?' })
+                                              .with_content('Delete Blog') %>
         </div>
 
         <% if @article.comments.present? %>
