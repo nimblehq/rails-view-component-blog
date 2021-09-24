@@ -19,13 +19,5 @@ RSpec.describe ::Base::Button::Component, type: :component do
 
       expect(button).to have_selector('a.btn-primary')
     end
-
-    it 'renders a link with "#" as href' do
-      content = 'Click me'
-
-      button = render_inline(described_class.new) { content }
-
-      expect(button).to have_selector(:css, 'a[href="#"]')
-    end
   end
 end
