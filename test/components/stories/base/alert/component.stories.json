@@ -1,0 +1,89 @@
+{
+  "title": "Base/Alert/Component",
+  "stories": [
+    {
+      "name": "default",
+      "parameters": {
+        "server": {
+          "id": "base/alert/component/default"
+        }
+      },
+      "args": {
+        "type": "info"
+      },
+      "argTypes": {
+        "type": {
+          "control": {
+            "type": "select"
+          },
+          "name": "Type",
+          "options": [
+            "info",
+            "success",
+            "secondary",
+            "warning",
+            "danger",
+            "light",
+            "dark"
+          ]
+        }
+      }
+    },
+    {
+      "name": "info",
+      "parameters": {
+        "server": {
+          "id": "base/alert/component/info"
+        }
+      }
+    },
+    {
+      "name": "success",
+      "parameters": {
+        "server": {
+          "id": "base/alert/component/success"
+        }
+      }
+    },
+    {
+      "name": "secondary",
+      "parameters": {
+        "server": {
+          "id": "base/alert/component/secondary"
+        }
+      }
+    },
+    {
+      "name": "warning",
+      "parameters": {
+        "server": {
+          "id": "base/alert/component/warning"
+        }
+      }
+    },
+    {
+      "name": "danger",
+      "parameters": {
+        "server": {
+          "id": "base/alert/component/danger"
+        }
+      }
+    },
+    {
+      "name": "light",
+      "parameters": {
+        "server": {
+          "id": "base/alert/component/light"
+        }
+      }
+    },
+    {
+      "name": "dark",
+      "parameters": {
+        "server": {
+          "id": "base/alert/component/dark"
+        }
+      }
+    }
+  ]
+}
