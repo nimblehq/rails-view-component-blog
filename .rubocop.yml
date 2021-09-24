@@ -17,6 +17,7 @@ AllCops:
     - 'tmp/**/*'
     - 'app/models/article.rb'
     - 'app/controllers/articles_controller.rb'
+    - 'spec/components/**/*'
   TargetRubyVersion: 2.7
   NewCops: enable
 
@@ -54,3 +55,7 @@ RSpec/ContextWording:
 Lint/MissingSuper:
   Exclude:
     - 'app/components/**/*'
+
+RSpec/MultipleExpectations:
+  Exclude:
+    - 'spec/components/**/*'
