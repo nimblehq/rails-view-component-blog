@@ -13,13 +13,5 @@ describe ArticlesController, type: :request do
         expect(response.status).to eq(200)
       end
     end
-
-    context 'when the user is not authenticated' do
-      it 'redirects to the login page' do
-        get :index
-
-        expect(response).to eq(200)
-      end
-    end
   end
 end
