@@ -22,11 +22,10 @@ module Base
         link: LINK_CLASSES
       }.freeze
 
-      def initialize(type: :primary, link: '#', **options)
+      def initialize(type: :primary, **options)
         @options = options
 
         @options[:tag] ||= :a
-        @options[:href] = link
         @options[:classes] = classes(type)
       end
 

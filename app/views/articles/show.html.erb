@@ -11,9 +11,9 @@
       <div class="col-md-10 col-lg-8 col-xl-7">
         <%= @article.content %>
         <div class="mt-5">
-          <%= render ::Base::Button::Component.new(link: edit_article_path(@article))
+          <%= render ::Base::Button::Component.new(href: edit_article_path(@article))
                                               .with_content('Edit Blog') %>
-          <%= render ::Base::Button::Component.new(link: @article, type: :danger, method: :delete,
+          <%= render ::Base::Button::Component.new(type: :danger, href: @article, method: :delete,
                                                    data: { confirm: 'Are you sure?' })
                                               .with_content('Delete Blog') %>
         </div>

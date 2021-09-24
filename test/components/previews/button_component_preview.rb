@@ -4,22 +4,22 @@ class ButtonComponentPreview < ViewComponent::Preview
   def default(type: :primary, content: 'Button')
     type = type.to_sym if type
 
-    render(ButtonComponent.new(type: type)) { content }
+    render(::Base::Button::Component.new(type: type)) { content }
   end
 
   def primary
-    render(ButtonComponent.new(type: :primary)) { 'Submit' }
+    render(::Base::Button::Component.new(type: :primary)) { 'Submit' }
   end
 
   def secondary
-    render(ButtonComponent.new(type: :secondary)) { 'Cancel' }
+    render(::Base::Button::Component.new(type: :secondary)) { 'Cancel' }
   end
 
   def danger
-    render(ButtonComponent.new(type: :danger)) { 'Delete' }
+    render(::Base::Button::Component.new(type: :danger)) { 'Delete' }
   end
 
   def link
-    render(ButtonComponent.new(type: :link)) { 'Terms and conditions' }
+    render(::Base::Button::Component.new(type: :link)) { 'Terms and conditions' }
   end
 end
