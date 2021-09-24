@@ -3,7 +3,6 @@
 module Base
   module Button
     class Component < ApplicationComponent
-
       attr_reader :type, :link
 
       BASE_CLASSES = %w[btn].freeze

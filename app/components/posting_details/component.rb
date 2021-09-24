@@ -3,6 +3,7 @@
 module PostingDetails
   class Component < ApplicationComponent
     attr_reader :time, :name
+
     def initialize(name:, time:)
       @name = name
       @time = time

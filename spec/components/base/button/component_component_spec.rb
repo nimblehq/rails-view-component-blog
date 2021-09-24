@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe ButtonComponent, type: :component do
+RSpec.describe ::Base::Button::Component, type: :component do
   context 'given no params but content' do
     it 'renders a link that includes the content' do
       content = 'Click me'
