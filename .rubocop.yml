@@ -35,7 +35,7 @@ Metrics/BlockLength:
 
 Lint/EmptyBlock:
   Exclude:
-    - 'test/components/stories/*'
+    - 'test/components/stories/**/*'
 
 Style/FormatStringToken:
   EnforcedStyle: template

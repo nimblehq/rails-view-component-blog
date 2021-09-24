@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<%= I18n.locale %>">
+<html lang="en">
   <head>
     <title>Rails View Component - The Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -17,10 +17,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
   </head>
 
-  <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/alert' %>
+  <body style="margin: 20px">
     <%= yield %>
-    <%= render 'shared/footer' %>
   </body>
 </html>
