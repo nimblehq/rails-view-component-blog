@@ -75,8 +75,15 @@ header.masthead .post-heading .meta {
 }
 
 header.masthead .post-heading .meta a {
-  color: #fff;
+  color: $white;
 }
+
+header .alert {
+  position: absolute;
+  margin-top: 80px;
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   header.masthead {
     padding-top: 12.5rem;
