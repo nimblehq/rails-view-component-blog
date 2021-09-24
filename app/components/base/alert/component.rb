@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Base
   module Alert
     class Component < ApplicationComponent
