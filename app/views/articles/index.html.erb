@@ -1,25 +1,13 @@
+<%= render Header::Component.new(image: image_url("header-image.jpeg"),
+                                 heading: "View Component in Real World",
+                                 subheading: "Growth#35 Project") %>
+
 <p id="notice"><%= notice %></p>
 
 <div class="container px-4 px-lg-5">
   <div class="row gx-4 gx-lg-5 justify-content-center">
     <div class="col-md-10 col-lg-8 col-xl-7">
-      <!-- Post preview-->
-      <% @articles.each do |article| %>
-      <div class="post-preview">
-        <%= link_to article do %>
-          <h2 class="post-title"><%= article.title %></h2>
-          <h3 class="post-subtitle"><%= truncate(article.content.to_plain_text, length: 100) %></h3>
-        <% end %>
-        <p class="post-meta">
-          Posted by
-          <a href="#!">Author</a>
-          on <%= post_time(article.created_at) %>
-        </p>
-      </div>
-      <!-- Divider-->
-      <hr class="my-4" />
-      <!-- Pager-->
-      <% end %>
+      <%= render Articles::ListItems::Component.with_collection(@articles) %>
 
       <%== pagy_bootstrap_nav(@pagy) %>
     </div>
